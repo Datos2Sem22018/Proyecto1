@@ -1,13 +1,13 @@
 #include "MPointer.h"
 
 template <class T>
-void MPointer::New() {
-    MPointer* myPtr = new MPointer;
-    this->data = new T;
+T& MPointer::operator new() {
+    new MPointer;
+    new int;
 }
 
 template <class T>
-T & MPointer::operator=(MPointer *myPtr) {
+T& MPointer::operator=(MPointer *myPtr) {
     if (typeid(T).name() == typeid(this).name()) {
         if (typeid(myPtr->data).name() == typeid(this->data).name()) {
             return true;
