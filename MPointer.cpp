@@ -1,7 +1,7 @@
 #include "MPointer.h"
 
 template <class T>
-T& MPointer::operator new() {
+void MPointer::operator new() {
     new MPointer;
     new int;
 }

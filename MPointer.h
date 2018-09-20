@@ -8,7 +8,7 @@ class MPointer {
 private:
     T* data;
 public:
-    T& operator new();
+    void operator new();
     T& operator =(MPointer *myPtr);
     ~MPointer();
 };
