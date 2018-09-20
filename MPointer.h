@@ -8,9 +8,10 @@ class MPointer {
 private:
     T* data;
 public:
-    void* operator new(size_t size);
-    T& operator =(MPointer *myPtr);
+    MPointer();
     ~MPointer();
+    static MPointer New();
+    bool operator = (MPointer* myPtr);
 };
 
 #endif
