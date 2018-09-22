@@ -2,11 +2,16 @@
 
 template <class T>
 LinkedList::LinkedList() {
-    this->head = nullptr;
+    head = NULL;
 }
 
 template <class T>
-void LinkedList::addAtFront(Node *n) {
+LinkedList::~LinkedList() {
+
+}
+
+template <class T>
+void LinkedList::addAtFront(Node<T>* n) {
     n->next = head;
     head = n;
 }
@@ -21,20 +26,20 @@ bool LinkedList::isEmpty() {
 }
 
 template <class T>
-void LinkedList::addAtEnd(Node *n) {
-    if (this->head == nullptr) {
-        this->head = n;
-        n->next = nullptr;
+void LinkedList::addAtEnd(Node<T>* n) {
+    if (head == NULL) {
+        head = n;
+        n->next = NULL;
     } else {
         Node *n2 = getLastNode();
-        n2->next = nullptr;
+        n2->next = NULL;
     }
 }
 
 template <class T>
 Node* LinkedList::getLastNode() {
     Node* ptr = head;
-    while (ptr->next != nullptr) {
+    while (ptr->next != NULL) {
         ptr = ptr->next;
     }
     return ptr;

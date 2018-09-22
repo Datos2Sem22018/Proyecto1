@@ -17,12 +17,12 @@ MPointer MPointer::New() {
     return *myPtr;
 }
 
-bool MPointer::operator=(MPointer *myPtr) {
+void MPointer::operator=(MPointer *myPtr) {
     if (typeid(myPtr).name() == typeid(this).name()) {
         if (typeid(myPtr->data).name() == typeid(this->data).name()) {
-            return true;
+            std::cout << "Operator works" << std::endl;
         }
     } else {
-        return false;
+        std::cout << "Doesn't work" << std::endl;
     }
 }

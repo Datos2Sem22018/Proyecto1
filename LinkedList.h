@@ -4,16 +4,18 @@
 
 template <class T>
 class LinkedList {
+private:
+    Node<T>* head;
 public:
-    Node* head;
-    void addAtFront(Node* n);
-    bool isEmpty();
-    void addAtEnd(Node* n);
-    Node* getLastNode();
-    Node* search(T var);
-    Node* deleteNode(T var);
-    void printList();
     LinkedList();
+    ~LinkedList();
+    void addAtFront(Node<T>* n);
+    bool isEmpty();
+    void addAtEnd(Node<T>* n);
+    Node<T>* getLastNode();
+    Node<T>* search(T var);
+    Node<T>* deleteNode(T var);
+    void printList();
 };
 
 

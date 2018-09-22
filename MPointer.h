@@ -11,7 +11,7 @@ public:
     MPointer();
     ~MPointer();
     static MPointer New();
-    bool operator = (MPointer* myPtr);
+    void operator = (MPointer* myPtr);
 };
 
 #endif
