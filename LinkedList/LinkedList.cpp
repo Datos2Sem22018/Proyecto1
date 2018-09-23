@@ -1,5 +1,6 @@
 #include "LinkedList.h"
 
+
 template <class T>
 LinkedList::LinkedList() {
     head = NULL;
@@ -77,3 +78,6 @@ void LinkedList::printList() {
         ptr = ptr->next;
     }
 }
+
+template<class T>
+
