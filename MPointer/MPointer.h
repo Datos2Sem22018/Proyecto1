@@ -2,19 +2,36 @@
 #define MPOINTER_LIBRARY_H
 #include <iostream>
 #include <typeinfo>
+#include "RC.h"
 
 template <class T>
 class MPointer {
 private:
     T* data;
+    RC* reference;
 public:
-    MPointer() = default;
-    ~MPointer() = default;
+    MPointer();
+    ~MPointer();
     static MPointer New();
     MPointer<T>& operator = (MPointer* myPtr);
     void operator * (T* value);
     T* operator &();
 };
+
+template <class T>
+MPointer<T>::MPointer() {
+    reference = new RC();
+    reference->addRef();
+}
+
+template <class T>
+MPointer<T>::~MPointer() {
+    if(reference->release() == 0)
+    {
+        delete data;
+        delete reference;
+    }
+}
 
 template <class T>
 MPointer<T> MPointer<T>::New() {

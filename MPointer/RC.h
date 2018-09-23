@@ -16,5 +16,4 @@ public:
     int release();
 };
 
-
 #endif //PROYECTO1_RC_H
