@@ -26,3 +26,7 @@ void MPointer<T>::operator=(MPointer *myPtr) {
         std::cout << "Doesn't work" << std::endl;
     }
 }
+template <class T>
+T* MPointer<T>::operator&() {
+    return *data;
+}
