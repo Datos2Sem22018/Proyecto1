@@ -1,24 +1,24 @@
 #include "LinkedList.h"
 
 template <class T>
-LinkedList::LinkedList() {
+LinkedList<T>::LinkedList() {
     head = NULL;
 }
 
 template <class T>
-LinkedList::~LinkedList() {
+LinkedList<T>::~LinkedList() {
 
 }
 
 template <class T>
-void LinkedList::addAtFront(Node<T>* n) {
+void LinkedList<T>::addAtFront(Node<T>* n) {
     n->next = head;
     head = n;
 }
 
 template <class T>
-bool LinkedList::isEmpty() {
-    if (this->head == nullptr) {
+bool LinkedList<T>::isEmpty() {
+    if (head == NULL) {
         return 1;
     } else {
         return 0;
@@ -26,7 +26,7 @@ bool LinkedList::isEmpty() {
 }
 
 template <class T>
-void LinkedList::addAtEnd(Node<T>* n) {
+void LinkedList<T>::addAtEnd(Node<T>* n) {
     if (head == NULL) {
         head = n;
         n->next = NULL;
@@ -37,8 +37,8 @@ void LinkedList::addAtEnd(Node<T>* n) {
 }
 
 template <class T>
-Node* LinkedList::getLastNode() {
-    Node* ptr = head;
+Node<T>* LinkedList<T>::getLastNode() {
+    Node<T>* ptr = head;
     while (ptr->next != NULL) {
         ptr = ptr->next;
     }
@@ -46,17 +46,17 @@ Node* LinkedList::getLastNode() {
 }
 
 template <class T>
-Node* LinkedList::search(T var) {
-    Node* ptr = head;
-    while (ptr != nullptr && ptr->data != var) {
+Node<T>* LinkedList<T>::search(T var) {
+    Node<T>* ptr = head;
+    while (ptr != NULL && ptr->data != var) {
         ptr = ptr->next;
     }
 }
 
 template <class T>
-Node* LinkedList::deleteNode(T var) {
-    Node* n = search(var);
-    Node* ptr = head;
+Node<T>* LinkedList<T>::deleteNode(T var) {
+    Node<T>* n = search(var);
+    Node<T>* ptr = head;
     if (ptr == n) {
         head = n->next;
         return n;
@@ -70,9 +70,9 @@ Node* LinkedList::deleteNode(T var) {
 }
 
 template <class T>
-void LinkedList::printList() {
-    Node* ptr = head;
-    while (ptr != nullptr) {
+void LinkedList<T>::printList() {
+    Node<T>* ptr = head;
+    while (ptr != NULL) {
         std::cout << ptr->data << "; " << std::flush;
         ptr = ptr->next;
     }
