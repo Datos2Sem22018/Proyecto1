@@ -4,14 +4,9 @@
 #include "MPointerGC.h"
 MPointerGC* MPointerGC::instance = 0;
 
-MPointerGC* MPointerGC::getInstance()
-{
+MPointerGC* MPointerGC::getInstance() {
     if (instance == 0){
         instance = new MPointerGC();
     }
-
     return instance;
 }
-
-MPointerGC::MPointerGC()
-{}
