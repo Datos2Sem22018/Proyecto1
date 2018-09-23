@@ -16,7 +16,7 @@ private:
     static MPointerGC* instance;
 
     /* Private constructor to prevent instancing. */
-    MPointerGC() = default;
+    MPointerGC();
 
 public:
     /* Static access method. */
