@@ -12,7 +12,7 @@ public:
     ~MPointer();
     static MPointer New();
     void operator = (MPointer* myPtr);
-    T* operator &();
+    int operator
 };
 
 #endif
