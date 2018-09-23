@@ -1,6 +1,6 @@
 #ifndef MPOINTER_LINKEDLIST_H
 #define MPOINTER_LINKEDLIST_H
-#include "Node.h"
+#include "Node/Node.h"
 
 template <class T>
 class LinkedList {
