@@ -30,3 +30,8 @@ template <class T>
 T* MPointer<T>::operator&() {
     return *data;
 }
+
+template <class T>
+void MPointer<T>::operator*(T* data){
+
+}
