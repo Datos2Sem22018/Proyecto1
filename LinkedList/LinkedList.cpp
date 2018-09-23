@@ -32,7 +32,7 @@ void LinkedList<T>::addAtEnd(Node<T>* n) {
         head = n;
         n->next = NULL;
     } else {
-        Node *n2 = getLastNode();
+        Node<T> *n2 = getLastNode();
         n2->next = NULL;
     }
 }
@@ -79,5 +79,5 @@ void LinkedList<T>::printList() {
     }
 }
 
-template<class T>
+
 

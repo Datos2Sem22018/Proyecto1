@@ -14,7 +14,7 @@ public:
     Node<T>* deleteNode(T var);
     void printList();
     LinkedList();
-
+    ~LinkedList();
 
 };
 
