@@ -2,7 +2,7 @@
 #include "LinkedList/LinkedList.h"
 using namespace std;
 
-#include "MPointerGC.cpp"
+#include "MPointerGC/MPointerGC.cpp"
 int main() {
     MPointerGC* s = MPointerGC::getInstance(); // Ok
     MPointerGC* r = MPointerGC::getInstance();

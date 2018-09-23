@@ -5,13 +5,13 @@
 template <class T>
 class LinkedList {
 public:
-    Node* head;
-    void addAtFront(Node* n);
+    Node<T>* head;
+    void addAtFront(Node<T>* n);
     bool isEmpty();
-    void addAtEnd(Node* n);
-    Node* getLastNode();
-    Node* search(T var);
-    Node* deleteNode(T var);
+    void addAtEnd(Node<T>* n);
+    Node<T>* getLastNode();
+    Node<T>* search(T var);
+    Node<T>* deleteNode(T var);
     void printList();
     LinkedList();
 
