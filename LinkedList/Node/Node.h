@@ -7,8 +7,14 @@ class Node {
 public:
     T data;
     Node* next;
-    Node (T var);
+    Node<T> (T var);
 };
+
+template <class T>
+Node<T>::Node(T var) {
+    this->data = var;
+    this->next = nullptr;
+}
 
 
 #endif //MPOINTER_NODE_H
