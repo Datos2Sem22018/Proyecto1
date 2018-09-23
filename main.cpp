@@ -1,5 +1,5 @@
 #include <iostream>
-#include "LinkedList/LinkedList.h"
+#include "MPointer/MPointer.h"
 #include "MPointerGC/MPointerGC.h"
 using namespace std;
 

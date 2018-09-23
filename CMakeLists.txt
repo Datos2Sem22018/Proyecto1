@@ -3,4 +3,4 @@ project(Proyecto1)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(Proyecto1 main.cpp MPointer/MPointer.h LinkedList/LinkedList.h LinkedList/Node/Node.h MPointerGC/MPointerGC.h MPointerGC/MPointerGC.cpp RC.cpp RC.h)
+add_executable(Proyecto1 main.cpp MPointer/MPointer.h LinkedList/LinkedList.h LinkedList/Node/Node.h MPointerGC/MPointerGC.h MPointerGC/MPointerGC.cpp ReferenceCounting/RC.cpp ReferenceCounting/RC.h)

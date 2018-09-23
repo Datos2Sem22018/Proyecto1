@@ -64,6 +64,7 @@ Node<T>* LinkedList<T>::search(T var) {
     while (ptr != NULL && ptr->data != var) {
         ptr = ptr->next;
     }
+    return ptr;
 }
 
 template <class T>
