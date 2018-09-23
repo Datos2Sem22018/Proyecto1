@@ -4,4 +4,4 @@ project(Proyecto1)
 set(CMAKE_CXX_STANDARD 11)
 
 add_executable(Proyecto1 main.cpp)
-add_library(MPointer SHARED MPointer.cpp MPointer.h LinkedList.cpp LinkedList.h Node.cpp Node.h)
+add_library(MPointer SHARED MPointer.cpp MPointer.h LinkedList.cpp LinkedList.h Node.cpp Node.h MPointerGC.cpp MPointerGC.h)
