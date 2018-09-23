@@ -10,7 +10,7 @@ int main() {
     /* The addresses will be the same. */
     std::cout << s << std::endl;
     std::cout << r << std::endl;
-    cout << "Hell World!, Mariano version 2.0"
+    cout << "Hell World!, Mariano version 2.0, Hagan Pull kbrones salu2"
             ""<< endl;
 
 
