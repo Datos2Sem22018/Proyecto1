@@ -8,7 +8,9 @@ public:
     int size;
     Node<T>* head;
     bool isEmpty();
+    void setValue(T var, int pos);
     void add(T var);
+    Node<T>* getNode(int pos);
     Node<T>* getLastNode();
     Node<T>* search(T var);
     T get(int i);
@@ -22,8 +24,13 @@ public:
 template <class T>
 LinkedList<T>::LinkedList() {
     head = NULL;
+    size = 0;
 }
 
+template <class T>
+void LinkedList<T>::setValue(T var, int pos) {
+    getNode(pos)->data = var;
+}
 
 template <class T>
 bool LinkedList<T>::isEmpty() {
@@ -45,6 +52,21 @@ T LinkedList<T>::get(int i){
         return NULL;
     }
     return ptr->data;
+}
+
+template <class T>
+Node<T>* LinkedList<T>::getNode(int pos)
+{
+    Node<T>* aux = head;
+    int x = 0;
+    while (x != pos) {
+        aux = aux->next;
+        x++;
+    }
+    if (aux == NULL) {
+        return NULL;
+    }
+    return aux;
 }
 
 template<class T>
