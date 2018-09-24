@@ -24,10 +24,11 @@ private:
 public:
     /* Static access method. */
     static MPointerGC* getInstance();
-    void execute();
+    static void executeMPGC();
     static LinkedList<int> listMemory;
-    template <class T>
+    /*template <class T>
     void setDirMemo(MPointer<T> myPtr);
+*/
 };
 
 
