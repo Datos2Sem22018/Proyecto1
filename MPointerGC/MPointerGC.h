@@ -7,7 +7,6 @@
 
 
 #include <iostream>
-#include "RC.h"
 
 class MPointerGC
 {

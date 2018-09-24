@@ -5,10 +5,10 @@
 template <class T>
 class LinkedList {
 public:
+    int size;
     Node<T>* head;
-    void addAtFront(Node<T>* n);
     bool isEmpty();
-    void addAtEnd(Node<T>* n);
+    void add(T var);
     Node<T>* getLastNode();
     Node<T>* search(T var);
     Node<T>* deleteNode(T var);
@@ -23,11 +23,6 @@ LinkedList<T>::LinkedList() {
     head = NULL;
 }
 
-template <class T>
-void LinkedList<T>::addAtFront(Node<T>* n) {
-    n->next = head;
-    head = n;
-}
 
 template <class T>
 bool LinkedList<T>::isEmpty() {
@@ -38,14 +33,22 @@ bool LinkedList<T>::isEmpty() {
     }
 }
 
-template <class T>
-void LinkedList<T>::addAtEnd(Node<T>* n) {
-    if (head == NULL) {
-        head = n;
-        n->next = NULL;
+template<class T>
+void LinkedList<T>::add(T var) {
+    if (size == 0) {
+        Node<T>* aux = new Node<T>(var);
+        head = aux;
+        head->next = NULL;
+        size++;
     } else {
-        Node<T> *n2 = getLastNode();
-        n2->next = NULL;
+        Node<T>* current = head;
+        while (current->next != NULL) {
+            current = current->next;
+        }
+        Node<T>* aux = new Node<T>(var);
+        aux->next = NULL;
+        current->next = aux;
+        size++;
     }
 }
 
