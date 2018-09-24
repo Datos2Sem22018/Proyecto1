@@ -14,8 +14,6 @@ MPointerGC* MPointerGC::getInstance()
     return instance;
 }
 
-MPointerGC::MPointerGC()
-{}
 
 
 void MPointerGC::execute() {
