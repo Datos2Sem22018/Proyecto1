@@ -19,6 +19,7 @@ private:
 public:
     /* Static access method. */
     static MPointerGC* getInstance();
+    void execute();
 };
 
 
