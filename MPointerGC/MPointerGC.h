@@ -7,19 +7,27 @@
 
 
 #include <iostream>
+#include "../LinkedList/LinkedList.h"
+#include "../MPointer/MPointer.h"
 
 class MPointerGC
 {
+
+
 private:
     /* Here will be the instance stored. */
     static MPointerGC* instance;
     /* Private constructor to prevent instancing. */
     MPointerGC() = default;
 
+
 public:
     /* Static access method. */
     static MPointerGC* getInstance();
     void execute();
+    static LinkedList<int> listMemory;
+    template <class T>
+    void setDirMemo(MPointer<T> myPtr);
 };
 
 
