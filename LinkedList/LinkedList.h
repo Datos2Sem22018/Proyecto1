@@ -11,6 +11,7 @@ public:
     void add(T var);
     Node<T>* getLastNode();
     Node<T>* search(T var);
+    T get(int i);
     Node<T>* deleteNode(T var);
     void printList();
     LinkedList();
@@ -31,6 +32,19 @@ bool LinkedList<T>::isEmpty() {
     } else {
         return 0;
     }
+}
+
+template <class T>
+T LinkedList<T>::get(int i){
+    Node<T>* ptr = head;
+    int x = 0;
+    while(x != i){
+        ptr = ptr->next;
+        x++;
+    }if(ptr == nullptr){
+        return NULL;
+    }
+    return ptr->data;
 }
 
 template<class T>

@@ -18,5 +18,6 @@ int main() {
     list->add(16);
     list->printList();
     cout << list->size << endl;
+    cout << list->get(1) << endl;
     return 0;
 }
