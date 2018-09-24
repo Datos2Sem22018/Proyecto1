@@ -1,5 +1,6 @@
 #include <iostream>
 #include <thread>
+#include <unistd.h>
 #include "MPointer/MPointer.h"
 #include "MPointerGC/MPointerGC.h"
 #include "LinkedList/LinkedList.h"
@@ -8,15 +9,17 @@ using namespace std;
 int main() {
 
     MPointerGC* mPointerGC;
-    mPointerGC->executeMPGC();
+    thread t1(mPointerGC->executeMPGC);
 
-    auto* list = new LinkedList<int>();
-    list->add(12);
-    list->add(14);
-    list->add(16);
-    list->printList();
-    cout << list->size << endl;
-    cout << list->get(1) << endl;
+
+
+    for(int i=0; i<100 ; i++){
+        cout<<"Desde el main"<<endl;
+        usleep(1000000);
+    }
+
+
+    t1.join();
 
 
 
