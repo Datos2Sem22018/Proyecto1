@@ -8,9 +8,9 @@ using namespace std;
 
 int main() {
 
-    MPointerGC* mPointerGC;
+    MPointerGC* mPointerGC = MPointerGC::getInstance();
     thread t1(mPointerGC->executeMPGC);
-
+    MPointer<int> mPtr = MPointer<int>::New();
 
 
     for(int i=0; i<100 ; i++){

@@ -27,7 +27,7 @@ template <class T>
 MPointer<T>::MPointer() {
     reference = new RC();
     reference->addRef();
-    setDirMem(this);
+    setDirMemo(this);
 }
 
 template <class T>
