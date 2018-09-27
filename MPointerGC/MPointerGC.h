@@ -8,7 +8,6 @@
 
 #include <iostream>
 #include "../LinkedList/LinkedList.h"
-#include "../MPointer/MPointer.h"
 
 class MPointerGC
 {
@@ -25,11 +24,7 @@ public:
     /* Static access method. */
     static MPointerGC* getInstance();
     static void executeMPGC();
-    static LinkedList<int> listMemory;
-
-    template <class T>
-    static void setDirMemo(MPointer<T> mPtr);
-
+    LinkedList<int> listMemory;
 };
 
 

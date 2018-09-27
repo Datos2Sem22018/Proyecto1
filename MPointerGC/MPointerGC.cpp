@@ -3,30 +3,23 @@
 //
 #include <unistd.h>
 #include "MPointerGC.h"
-#include "../MPointer/MPointer.h"
 
 
 ///parte del Singleton///////////////////////
 MPointerGC* MPointerGC::instance = 0;
-MPointerGC* MPointerGC::getInstance()
-{
+
+MPointerGC* MPointerGC::getInstance() {
     if (instance == 0){
         instance = new MPointerGC();
         instance++;
     }else{
         std::cout<<"Instancia ya creada"<<std::endl;
     }
-
     return instance;
 
 }
 
 /////////////////////////////////////////////
-template<class T>
-void MPointerGC::setDirMemo(MPointer<T> mPtr) {
-    listMemory.add(&mPtr);
-}
-
 void MPointerGC::executeMPGC() {
 
     MPointerGC* mPointerGC = MPointerGC::getInstance();
@@ -35,5 +28,3 @@ void MPointerGC::executeMPGC() {
         usleep(5000000);
     }
 }
-
-template class MPointer<int>;

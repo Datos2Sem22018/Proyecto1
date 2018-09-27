@@ -11,17 +11,11 @@ int main() {
     MPointerGC* mPointerGC = MPointerGC::getInstance();
     thread t1(mPointerGC->executeMPGC);
     MPointer<int> mPtr = MPointer<int>::New();
-
-
+    mPtr.instance = mPointerGC;
     for(int i=0; i<100 ; i++){
         cout<<"Desde el main"<<endl;
         usleep(1000000);
     }
-
-
     t1.join();
-
-
-
     return 0;
 }
