@@ -28,7 +28,7 @@ public:
     static LinkedList<int> listMemory;
 
     template <class T>
-    void setDirMemo(MPointer<T> myPtr);
+    void setDirMemo(MPointer<T>* myPtr);
 
 };
 

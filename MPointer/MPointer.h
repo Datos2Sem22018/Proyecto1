@@ -3,7 +3,6 @@
 #include <iostream>
 #include <typeinfo>
 #include "RC.h"
-#include "../MPointerGC/MPointerGC.h"
 
 template <class T>
 class MPointer {
@@ -11,13 +10,9 @@ private:
     T* data;
     RC* reference;
 public:
-    //Constructor de la clase
     MPointer();
-    //Destructor de la clase
     ~MPointer();
-    //Asigacion de Memoria por atributo de MPointer
     static MPointer New();
-    //Sobrecarga de metodos de MPointer
     MPointer<T>& operator = (MPointer* myPtr);
     void operator * (T* value);
     T* operator &();
@@ -27,7 +22,6 @@ template <class T>
 MPointer<T>::MPointer() {
     reference = new RC();
     reference->addRef();
-    setDirMem(this);
 }
 
 template <class T>
