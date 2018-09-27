@@ -10,6 +10,7 @@ public:
     bool isEmpty();
     void setValue(T var, int pos);
     void add(T var);
+    void remove(int pos);
     Node<T>* getNode(int pos);
     Node<T>* getLastNode();
     Node<T>* search(T var);
@@ -85,6 +86,32 @@ void LinkedList<T>::add(T var) {
         aux->next = NULL;
         current->next = aux;
         size++;
+    }
+}
+
+template <class T>
+void LinkedList<T>::remove(int pos){
+    int pos_aux = pos;
+    Node<T>* current = head;
+    if (pos_aux == 0) {
+        head = current->next;
+        size -= 1;
+    } else if (pos_aux == size - 1) {
+        while (current->next->next != NULL) {
+            current = current->next;
+        }
+        current->next = NULL;
+        size -= 1;
+    } else if (pos_aux >= size) {
+        std::cout<<"No se encuentra el elemento"<< std::endl;
+    } else {
+        int b = 0;
+        while (pos_aux - 1 != b) {
+            current = current->next;
+            b++;
+        }
+        current->next = current->next->next;
+        size -= 1;
     }
 }
 

@@ -22,10 +22,9 @@ MPointerGC* MPointerGC::getInstance()
 }
 
 /////////////////////////////////////////////
-template <class T>
-void MPointerGC::setDirMemo(MPointer<T>* myPtr) {
-    listMemory.add((int)myPtr);
-
+template<class T>
+void MPointerGC::setDirMemo(MPointer<T> mPtr) {
+    listMemory.add(&mPtr);
 }
 
 void MPointerGC::executeMPGC() {
@@ -37,4 +36,4 @@ void MPointerGC::executeMPGC() {
     }
 }
 
-
+template class MPointer<int>;
