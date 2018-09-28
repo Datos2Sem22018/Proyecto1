@@ -36,9 +36,9 @@ void LinkedList<T>::setValue(T var, int pos) {
 template <class T>
 bool LinkedList<T>::isEmpty() {
     if (head == NULL) {
-        return 1;
+        return true;
     } else {
-        return 0;
+        return false;
     }
 }
 
@@ -73,7 +73,7 @@ Node<T>* LinkedList<T>::getNode(int pos)
 template<class T>
 void LinkedList<T>::add(T var) {
     if (size == 0) {
-        Node<T>* aux = new Node<T>(var);
+        auto* aux = new Node<T>(var);
         head = aux;
         head->next = NULL;
         size++;
@@ -82,7 +82,7 @@ void LinkedList<T>::add(T var) {
         while (current->next != NULL) {
             current = current->next;
         }
-        Node<T>* aux = new Node<T>(var);
+        auto* aux = new Node<T>(var);
         aux->next = NULL;
         current->next = aux;
         size++;

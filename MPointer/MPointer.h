@@ -5,6 +5,8 @@
 #include "RC.h"
 #include "../MPointerGC/MPointerGC.h"
 
+class MPointerGC;
+
 template <class T>
 class MPointer {
 private:
@@ -20,14 +22,15 @@ public:
     //Sobrecarga de metodos de MPointer
     MPointer<T>& operator = (MPointer* myPtr);
     void operator * (T* value);
-    T* operator &();
+    T operator &();
+    MPointerGC* instance;
 };
 
 template <class T>
 MPointer<T>::MPointer() {
     reference = new RC();
     reference->addRef();
-    setDirMemo(this);
+    instance->listMemory.add(&(*this));
 }
 
 template <class T>
@@ -41,7 +44,7 @@ MPointer<T>::~MPointer() {
 
 template <class T>
 MPointer<T> MPointer<T>::New() {
-    auto* myPtr = new MPointer;
+    auto* myPtr = new MPointer();
     new T;
     return *myPtr;
 }
@@ -56,7 +59,7 @@ MPointer<T>& MPointer<T>::operator=(MPointer *myPtr) {
     }
 }
 template <class T>
-T* MPointer<T>::operator&() {
+T MPointer<T>::operator&() {
     return *data;
 }
 

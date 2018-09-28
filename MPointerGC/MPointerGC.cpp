@@ -37,6 +37,5 @@ void MPointerGC::executeMPGC() {
 }
 
 template class MPointer<int>;
-template class MPointer<std::string>;
 
 
