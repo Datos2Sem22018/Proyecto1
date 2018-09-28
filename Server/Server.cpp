@@ -1,7 +1,7 @@
 #include <iostream>
 #include "ServerSocket.h"
 
-ServerSocket tcp;
+/*ServerSocket tcp;
 
 
 void * loop(void * m) {
@@ -32,4 +32,4 @@ int main()
         tcp.receive();
     }
     return 0;
-}
+}*/

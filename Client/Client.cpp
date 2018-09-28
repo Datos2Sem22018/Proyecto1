@@ -2,7 +2,7 @@
 #include <csignal>
 #include "ClientSocket.h"
 
-ClientSocket tcp;
+/*ClientSocket tcp;
 
 void sig_exit(int s)
 {
@@ -25,4 +25,4 @@ int main(int argc, char *argv[])
         sleep(1);
     }
     return 0;
-}
+}*/
