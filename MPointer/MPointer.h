@@ -5,8 +5,6 @@
 #include "RC.h"
 #include "../MPointerGC/MPointerGC.h"
 
-class MPointerGC;
-
 template <class T>
 class MPointer {
 private:
@@ -23,14 +21,12 @@ public:
     MPointer<T>& operator = (MPointer* myPtr);
     void operator * (T* value);
     T operator &();
-    MPointerGC* instance;
 };
 
-template <class T>
+template<class T>
 MPointer<T>::MPointer() {
     reference = new RC();
     reference->addRef();
-    instance->listMemory.add(&(*this));
 }
 
 template <class T>
@@ -48,6 +44,7 @@ MPointer<T> MPointer<T>::New() {
     new T;
     return *myPtr;
 }
+
 template <class T>
 MPointer<T>& MPointer<T>::operator=(MPointer *myPtr) {
     if (typeid(myPtr).name() == typeid(this).name()) {
@@ -58,6 +55,7 @@ MPointer<T>& MPointer<T>::operator=(MPointer *myPtr) {
         std::cout << "Doesn't work" << std::endl;
     }
 }
+
 template <class T>
 T MPointer<T>::operator&() {
     return *data;
