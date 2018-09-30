@@ -189,7 +189,12 @@ Node<T>* LinkedList<T>::search(T var) {
     }
     return ptr;
 }
-
+/**
+ * Busca un NODO por su valor, y si lo encuentra lo elimina de la lista
+ * @tparam T
+ * @param var : Valor a eliminar
+ * @return : Nodo eliminado
+ */
 template <class T>
 Node<T>* LinkedList<T>::deleteNode(T var) {
     Node<T>* n = search(var);
@@ -205,6 +210,10 @@ Node<T>* LinkedList<T>::deleteNode(T var) {
         return n;
     }
 }
+/**
+ * imprime los valores contenidos dentro de los Nodos de las Listas
+ * @tparam T
+ */
 
 template <class T>
 void LinkedList<T>::printList() {
