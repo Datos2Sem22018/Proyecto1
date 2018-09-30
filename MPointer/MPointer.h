@@ -22,13 +22,19 @@ public:
     void operator * (T* value);
     T operator &();
 };
-
+/**
+ * Contructor de la clase
+ * @tparam T
+ */
 template<class T>
 MPointer<T>::MPointer() {
     reference = new RC();
     reference->addRef();
 }
-
+/**
+ * Destructor de la clase
+ * @tparam T
+ */
 template <class T>
 MPointer<T>::~MPointer() {
     if(reference->release() == 0)
@@ -37,14 +43,23 @@ MPointer<T>::~MPointer() {
         delete reference;
     }
 }
-
+/**
+ * crea una asignacion de memoria para un dato incertado en MPointer
+ * @tparam T
+ * @return
+ */
 template <class T>
 MPointer<T> MPointer<T>::New() {
     auto* myPtr = new MPointer();
     new T;
     return *myPtr;
 }
-
+/**
+ * Sobrecarga del operador "="
+ * @tparam T
+ * @param myPtr : valor a verificar
+ * @return : Valido o Invalido
+ */
 template <class T>
 MPointer<T>& MPointer<T>::operator=(MPointer *myPtr) {
     if (typeid(myPtr).name() == typeid(this).name()) {
@@ -56,11 +71,23 @@ MPointer<T>& MPointer<T>::operator=(MPointer *myPtr) {
     }
 }
 
+/**
+ * Sobrecarga del operador "&"
+ * retorna el valor de Mpointer
+ * @tparam T
+ * @return : valor del Mpointer
+ */
 template <class T>
 T MPointer<T>::operator&() {
     return *data;
 }
 
+/**
+ * Sobrecarga del operador "*"
+ * asigna el valor a MPointer
+ * @tparam T
+ * @param value : valor a agregar
+ */
 template <class T>
 void MPointer<T>::operator*(T* value){
     data = value;
