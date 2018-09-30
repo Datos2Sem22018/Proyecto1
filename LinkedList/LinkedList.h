@@ -155,7 +155,8 @@ void LinkedList<T>::printList() {
     while (ptr != NULL) {
         std::cout << ptr->data << "; " << std::flush;
         ptr = ptr->next;
-    }
+
+    }std::cout<<std::endl;
 }
 
 

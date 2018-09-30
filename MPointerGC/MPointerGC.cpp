@@ -27,10 +27,10 @@ void MPointerGC::setDirMemo(MPointer<T> mPtr) {
 }*/
 
 /////////////////////////////////////////////
-template<class T>
+/*template<class T>
 void MPointerGC::setDirMemo(MPointer<T> mPtr) {
     listMemory.add(&mPtr);
-}
+}*/
 
 void MPointerGC::executeMPGC() {
 
@@ -42,5 +42,6 @@ void MPointerGC::executeMPGC() {
 }
 
 template class MPointer<int>;
+template class MPointer<std::string>;
 
 

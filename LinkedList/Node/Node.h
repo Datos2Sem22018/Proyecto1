@@ -1,7 +1,10 @@
 #ifndef MPOINTER_NODE_H
 #define MPOINTER_NODE_H
 #include <iostream>
-
+/**
+ * Clase Nodo, utilizada para almacenar
+ * @tparam T
+ */
 template <class T>
 class Node {
 public:
