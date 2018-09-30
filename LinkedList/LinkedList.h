@@ -1,14 +1,21 @@
 #ifndef MPOINTER_LINKEDLIST_H
 #define MPOINTER_LINKEDLIST_H
 #include "Node/Node.h"
-
+/**
+ * Clase Linked List, estructura de enlace sencillo de clases tipo Nodo
+ * @tparam T
+ */
 template <class T>
 class LinkedList {
+
 public:
+    //Declaracion de atributos de la clase
     int size;
     Node<T>* head;
+
+    //Declaracion de metodos de la clase
     bool isEmpty();
-    void setValue(T var, int pos);
+    void addInPos(T var, int pos);
     void add(T var);
     void remove(int pos);
     Node<T>* getNode(int pos);
@@ -17,22 +24,41 @@ public:
     T get(int i);
     Node<T>* deleteNode(T var);
     void printList();
+
+    //Constructor de la clase
     LinkedList();
+
+    //Destructor de la clase
     ~LinkedList() = default;
 
 };
 
+/**
+ * Construcor de la clase
+ * Se inicialilza vacio para poder agregar mas nodos posteriormente
+ * @tparam T
+ */
 template <class T>
 LinkedList<T>::LinkedList() {
     head = NULL;
     size = 0;
 }
 
+/**
+ * Inserta un valor en una posicion dada
+ * @tparam T
+ * @param var : valor a insertar
+ * @param pos : posicion en la cual se incertara el valor
+ */
 template <class T>
-void LinkedList<T>::setValue(T var, int pos) {
+void LinkedList<T>::addInPos(T var, int pos) {
     getNode(pos)->data = var;
 }
-
+/**
+ * Verifica si la lista esta vacia, retorna verdadero en caso de que no contenga elementos
+ * @tparam T
+ * @return : booleano
+ */
 template <class T>
 bool LinkedList<T>::isEmpty() {
     if (head == NULL) {
@@ -41,7 +67,12 @@ bool LinkedList<T>::isEmpty() {
         return false;
     }
 }
-
+/**
+ * Obtiene el valor del nodo en el indice especificado
+ * @tparam T
+ * @param i : numero de indice de la lista
+ * @return : valor que contiene el NODO
+ */
 template <class T>
 T LinkedList<T>::get(int i){
     Node<T>* ptr = head;
@@ -54,7 +85,12 @@ T LinkedList<T>::get(int i){
     }
     return ptr->data;
 }
-
+/**
+ * retorna el NODO en el indice especificado
+ * @tparam T
+ * @param pos : posicion en la lista
+ * @return : NODO solicitado
+ */
 template <class T>
 Node<T>* LinkedList<T>::getNode(int pos)
 {
@@ -70,6 +106,11 @@ Node<T>* LinkedList<T>::getNode(int pos)
     return aux;
 }
 
+/**
+ * Agrega un Nodo al final de la lista
+ * @tparam T
+ * @param var : Valor a agregar
+ */
 template<class T>
 void LinkedList<T>::add(T var) {
     if (size == 0) {
@@ -89,6 +130,11 @@ void LinkedList<T>::add(T var) {
     }
 }
 
+/**
+ * remueve el nodo de la posicion solicitada
+ * @tparam T
+ * @param pos : indice a eliminar
+ */
 template <class T>
 void LinkedList<T>::remove(int pos){
     int pos_aux = pos;
@@ -115,6 +161,11 @@ void LinkedList<T>::remove(int pos){
     }
 }
 
+/**
+ * retorna el ultimo valor de la lista
+ * @tparam T
+ * @return : ultimo NODO enlistado
+ */
 template <class T>
 Node<T>* LinkedList<T>::getLastNode() {
     Node<T>* ptr = head;
@@ -124,6 +175,12 @@ Node<T>* LinkedList<T>::getLastNode() {
     return ptr;
 }
 
+/**
+ * Busca un valor dado
+ * @tparam T
+ * @param var : Valor a buscar
+ * @return : valor encontrado
+ */
 template <class T>
 Node<T>* LinkedList<T>::search(T var) {
     Node<T>* ptr = head;
