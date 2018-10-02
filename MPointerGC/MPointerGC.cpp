@@ -15,7 +15,6 @@ MPointerGC* MPointerGC::instance = 0;
 MPointerGC* MPointerGC::getInstance() {
     if (instance == 0){
         instance = new MPointerGC();
-
     }else{
         std::cout<<"Instancia ya creada"<<std::endl;
     }
