@@ -10,7 +10,7 @@ private:
     static MPointerGC* instance;
     /* Private constructor to prevent instancing. */
     MPointerGC();
-    /* Static access method. */
+
 public:
     static MPointerGC* getInstance();
     static void executeMPGC();

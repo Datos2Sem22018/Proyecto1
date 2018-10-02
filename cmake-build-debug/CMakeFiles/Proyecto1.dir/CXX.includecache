@@ -26,6 +26,12 @@ RC.h
 
 /home/mariano/CLionProjects/Proyecto1/MPointer/RC.h
 
+/home/mariano/CLionProjects/Proyecto1/MPointerGC/MPointerGC.cpp
+unistd.h
+-
+MPointerGC.h
+/home/mariano/CLionProjects/Proyecto1/MPointerGC/MPointerGC.h
+
 /home/mariano/CLionProjects/Proyecto1/MPointerGC/MPointerGC.h
 iostream
 -
