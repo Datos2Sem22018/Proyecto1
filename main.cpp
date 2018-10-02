@@ -8,27 +8,41 @@
 #include "MPointer/MPointer.h"
 #include "MPointerGC/MPointerGC.h"
 #include "LinkedList/LinkedList.h"
+
 using namespace std;
-
-static void executeMPGC() {
-    MPointerGC::getInstance();
-    for(int i=0; i<5; i++){
-        std::cout<<"Execcuting MPointerGC"<<std::endl;
-        usleep(5000000);
-    }
-}
-
-int main() {
-    /**
+/**
  * clase principal de la ejecucion de Mpointer.
  * @return
  */
-    MPointer<int>* myPtr = new MPointer<int>();
-    MPointer<int>* myPtr2 = new MPointer<int>();
-    MPointer<int>* myPtr3 = new MPointer<int>();
-    MPointerGC::getInstance()->listMemory.printList();
-    cout << myPtr->getID() << endl;
-    cout << myPtr2->getID() << endl;
-    cout << myPtr3->getID() << endl;
+int main() {
+
+    // Pruebas a Linked List
+    LinkedList<int> l1 = LinkedList<int>();
+    l1.add(23);
+    l1.add(34);
+    l1.printList();
+
+
+    //Pruebas a la creacion del CG
+    MPointerGC* mPointerGC = MPointerGC::getInstance();
+    cout << &mPointerGC << endl;
+
+    /*ejecucion del Thread*/
+    thread t1(mPointerGC->executeMPGC);
+
+    //Pruebas a  la creacion de una instancia de MPointer
+    MPointer<int>* mPtr = new MPointer<int>;
+    cout << &mPtr << endl;
+
+
+    for(int i=0; i<100 ; i++){
+        cout<<"Desde el main"<<endl;
+        usleep(1000000);
+    }
+
+
+
+    //Activacion del thread
+    t1.join();
     return 0;
 }
