@@ -194,12 +194,18 @@ Node<T>* LinkedList<T>::search(T var) {
 
 template <class T>
 bool LinkedList<T>::searchB(T var) {
-    Node<T>* ptr = head;
-    while (ptr != NULL && ptr->data != var) {
-        ptr = ptr->next;
+    if(this->isEmpty()){
+        return false;
+    }else{
+        Node<T>* ptr = head;
+        while (ptr != NULL && ptr->data != var) {
+            ptr = ptr->next;
+        }
+        return true;
     }
 
-    return true;
+
+
 }
 
 

@@ -15,23 +15,15 @@ MPointerGC* MPointerGC::instance = nullptr;
 MPointerGC* MPointerGC::getInstance() {
     if (instance == nullptr){
         instance = new MPointerGC();
-    }else{
-        std::cout<<"Instancia ya creada"<<std::endl;
     }
     return instance;
 
 }
 
 int MPointerGC::getID() {
-    int ID = rand()%1000;
-    if(listID.searchB(ID)){
-
-        std::cout<<"Id "<<ID<< " ya ocupado"<<listID.searchB(ID)<<std::endl;
-        listID.printList();
-    }else {
-        listID.add(ID);
-        return ID;
-    }
+    int ID = rand()%1000000;
+    listID.add(ID);
+    return ID;
 }
 
 void MPointerGC::executeMPGC() {

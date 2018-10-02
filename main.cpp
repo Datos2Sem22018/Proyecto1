@@ -24,7 +24,7 @@ int main() {
 
 
     //Pruebas a la creacion del CG
-    MPointerGC* mPointerGC = MPointerGC::getInstance();
+    MPointerGC* mPointerGC;
 
     /*ejecucion del Thread*/
     thread t1(mPointerGC->executeMPGC);
@@ -32,6 +32,9 @@ int main() {
     //Pruebas a  la creacion de una instancia de MPointer
     MPointer<int>* mPtr = new MPointer<int>();
     cout << &mPtr << endl;
+
+    MPointer<int>* mPtr2 = new MPointer<int>();
+    cout<< &mPtr2<<endl;
 
 
     for(int i=0; i<15 ; i++){
