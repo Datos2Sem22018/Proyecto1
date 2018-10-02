@@ -26,12 +26,12 @@ int MPointerGC::getID() {
     int ID = rand()%1000;
     if(listID.searchB(ID)){
         ID=getID();
-    }
-    return ID;
+    }else
+        return ID;
 }
 
 void MPointerGC::executeMPGC() {
-    for(int i=0; i<5; i++){
+    for(;;){
         std::cout<<"Execcuting MPointerGC"<<std::endl;
         usleep(5000000);
     }
