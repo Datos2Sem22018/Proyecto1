@@ -21,6 +21,7 @@ public:
     Node<T>* getNode(int pos);
     Node<T>* getLastNode();
     Node<T>* search(T var);
+    bool searchB(T var);
     T get(int i);
     Node<T>* deleteNode(T var);
     void printList();
@@ -187,8 +188,22 @@ Node<T>* LinkedList<T>::search(T var) {
     while (ptr != NULL && ptr->data != var) {
         ptr = ptr->next;
     }
+
     return ptr;
 }
+
+template <class T>
+bool LinkedList<T>::searchB(T var) {
+    Node<T>* ptr = head;
+    while (ptr != NULL && ptr->data != var) {
+        ptr = ptr->next;
+    }
+
+    return true;
+}
+
+
+
 /**
  * Busca un NODO por su valor, y si lo encuentra lo elimina de la lista
  * @tparam T
