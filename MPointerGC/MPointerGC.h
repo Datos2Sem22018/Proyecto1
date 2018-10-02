@@ -13,6 +13,7 @@ private:
     /* Static access method. */
 public:
     static MPointerGC* getInstance();
+    static void executeMPGC();
     int getID();
     LinkedList<long> listMemory;
     LinkedList<int> listReferences;

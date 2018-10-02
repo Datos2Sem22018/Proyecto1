@@ -28,7 +28,10 @@ int MPointerGC::getID() {
     return ID;
 }
 
-/*template<class T>
-void MPointerGC::setDirMemo(MPointer<T> mPtr) {
-    listMemory.add(&mPtr);
-}*/
+void MPointerGC::executeMPGC() {
+    MPointerGC* mPointerGC = MPointerGC::getInstance();
+    for(int i=0; i<5; i++){
+        std::cout<<"Execcuting MPointerGC"<<std::endl;
+        usleep(5000000);
+    }
+}
