@@ -14,15 +14,35 @@ Node/Node.h
 iostream
 -
 
-/home/mariano/CLionProjects/Proyecto1/MPointerGC/MPointerGC.cpp
-unistd.h
+/home/mariano/CLionProjects/Proyecto1/MPointer/MPointer.h
+iostream
 -
-MPointerGC.h
+typeinfo
+-
+RC.h
+/home/mariano/CLionProjects/Proyecto1/MPointer/RC.h
+../MPointerGC/MPointerGC.h
 /home/mariano/CLionProjects/Proyecto1/MPointerGC/MPointerGC.h
+
+/home/mariano/CLionProjects/Proyecto1/MPointer/RC.h
 
 /home/mariano/CLionProjects/Proyecto1/MPointerGC/MPointerGC.h
 iostream
 -
 ../LinkedList/LinkedList.h
+/home/mariano/CLionProjects/Proyecto1/LinkedList/LinkedList.h
+
+/home/mariano/CLionProjects/Proyecto1/main.cpp
+iostream
+-
+thread
+-
+unistd.h
+-
+MPointer/MPointer.h
+/home/mariano/CLionProjects/Proyecto1/MPointer/MPointer.h
+MPointerGC/MPointerGC.h
+/home/mariano/CLionProjects/Proyecto1/MPointerGC/MPointerGC.h
+LinkedList/LinkedList.h
 /home/mariano/CLionProjects/Proyecto1/LinkedList/LinkedList.h
 

@@ -25,16 +25,28 @@ public:
     void setID();
     int getID();
 };
+//####################################################################//
 /**
  * Contructor de la clase
  * @tparam T
  */
 template<class T>
 MPointer<T>::MPointer() {
+    //guardar el espacio de memoria
+    data = malloc(sizeof(T));
+
+    //Asigna el ID correspondiente
+    setID();
+
+
+
     reference = new RC();
     reference->addRef();
-    setID();
+
     MPointerGC::getInstance()->listMemory.add(long(this));
+
+
+
 }
 /**
  * Destructor de la clase
