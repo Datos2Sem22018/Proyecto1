@@ -25,7 +25,6 @@ int main() {
 
     //Pruebas a la creacion del CG
     MPointerGC* mPointerGC = MPointerGC::getInstance();
-    cout << &mPointerGC << endl;
 
     /*ejecucion del Thread*/
     thread t1(mPointerGC->executeMPGC);
