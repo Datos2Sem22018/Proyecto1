@@ -23,6 +23,11 @@ MPointerGC* MPointerGC::getInstance() {
 
 }
 
+int MPointerGC::getID() {
+    int ID = rand();
+    return ID;
+}
+
 /*template<class T>
 void MPointerGC::setDirMemo(MPointer<T> mPtr) {
     listMemory.add(&mPtr);

@@ -10,17 +10,20 @@ class MPointer {
 private:
     T* data;
     RC* reference;
+    int ID;
 public:
     //Constructor de la clase
     MPointer();
     //Destructor de la clase
     ~MPointer();
-    //Asigacion de Memoria por atributo de MPointer
+    //Asignacion de Memoria por atributo de MPointer
     static MPointer New();
     //Sobrecarga de metodos de MPointer
     MPointer<T>& operator = (MPointer* myPtr);
-    void operator * (T* value);
+    void operator * (T value);
     T operator &();
+    void setID();
+    int getID();
 };
 /**
  * Contructor de la clase
@@ -30,8 +33,8 @@ template<class T>
 MPointer<T>::MPointer() {
     reference = new RC();
     reference->addRef();
-    MPointerGC::getInstance()->listMemory.add((long)(this));
-    MPointerGC::getInstance()->listReferences.add(reference->count);
+    setID();
+    MPointerGC::getInstance()->listMemory.add(long(this));
 }
 /**
  * Destructor de la clase
@@ -46,14 +49,13 @@ MPointer<T>::~MPointer() {
     }
 }
 /**
- * crea una asignacion de memoria para un dato incertado en MPointer
+ * crea una asignacion de memoria para un dato insertado en MPointer
  * @tparam T
  * @return
  */
 template <class T>
 MPointer<T> MPointer<T>::New() {
     MPointer<T>* myPtr = new MPointer();
-    new T;
     return *myPtr;
 }
 /**
@@ -77,7 +79,7 @@ MPointer<T>& MPointer<T>::operator=(MPointer *myPtr) {
  * Sobrecarga del operador "&"
  * retorna el valor de Mpointer
  * @tparam T
- * @return : valor del Mpointer
+ * @return :valor del Mpointer
  */
 template <class T>
 T MPointer<T>::operator&() {
@@ -91,8 +93,18 @@ T MPointer<T>::operator&() {
  * @param value : valor a agregar
  */
 template <class T>
-void MPointer<T>::operator*(T* value){
-    data = value;
+void MPointer<T>::operator*(T value){
+    *data = value;
+}
+
+template <class T>
+void MPointer<T>::setID() {
+    ID = MPointerGC::getInstance()->getID();
+}
+
+template <class T>
+int MPointer<T>::getID() {
+    return ID;
 }
 
 #endif

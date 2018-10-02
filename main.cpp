@@ -1,3 +1,7 @@
+/**
+ *  Includes
+ */
+
 #include <iostream>
 #include <thread>
 #include <unistd.h>
@@ -19,15 +23,12 @@ int main() {
  * clase principal de la ejecucion de Mpointer.
  * @return
  */
-    thread t1(executeMPGC);
     MPointer<int>* myPtr = new MPointer<int>();
-    cout << "Working" << endl;
-    cout << &myPtr << endl;
+    MPointer<int>* myPtr2 = new MPointer<int>();
+    MPointer<int>* myPtr3 = new MPointer<int>();
     MPointerGC::getInstance()->listMemory.printList();
-    for(int i=0; i<100 ; i++){
-        cout<<"Desde el main"<<endl;
-        usleep(1000000);
-    }
-    t1.join();
+    cout << myPtr->getID() << endl;
+    cout << myPtr2->getID() << endl;
+    cout << myPtr3->getID() << endl;
     return 0;
 }

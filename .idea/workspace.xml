@@ -1,0 +1,769 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
+    <generated>
+      <config projectName="Proyecto1" targetName="Proyecto1" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ebe118ee-d7f1-4bc1-8560-ebe1df260f0d" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/LinkedListDouble/LinkedListDouble.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LinkedListDouble/NodeDouble.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MPointer/MPointer.h" beforeDir="false" afterPath="$PROJECT_DIR$/MPointer/MPointer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MPointerGC/MPointerGC.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MPointerGC/MPointerGC.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MPointerGC/MPointerGC.h" beforeDir="false" afterPath="$PROJECT_DIR$/MPointerGC/MPointerGC.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="353">
+              <caret line="24" column="3" lean-forward="true" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
+              <folding>
+                <element signature="e#22#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RC.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MPointer/RC.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MPointerGC.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MPointerGC/MPointerGC.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+              <folding>
+                <element signature="e#39#58#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MPointerGC.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MPointerGC/MPointerGC.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="6" column="29" lean-forward="true" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Node.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LinkedList/Node/Node.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClientSocket.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Client/ClientSocket.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServerSocket.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Server/ServerSocket.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RC.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MPointer/RC.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MPointer.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MPointer/MPointer.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="384">
+              <caret line="106" column="14" selection-start-line="106" selection-start-column="14" selection-end-line="106" selection-end-column="14" />
+              <folding>
+                <element signature="e#54#73#0" expanded="true" />
+                <element signature="e#2046#2055#0" expanded="true" />
+                <element signature="e#2153#2162#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/RC.h" />
+        <option value="$PROJECT_DIR$/RC.cpp" />
+        <option value="$PROJECT_DIR$/ReferenceCounting/RC.h" />
+        <option value="$PROJECT_DIR$/ReferenceCounting/RC.cpp" />
+        <option value="$PROJECT_DIR$/MPointerGC/RC.cpp" />
+        <option value="$PROJECT_DIR$/MPointerGC/RC.h" />
+        <option value="$PROJECT_DIR$/MPointer/RC.cpp" />
+        <option value="$PROJECT_DIR$/LinkedList/LinkedList.h" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/MPointer/MPointer.cpp" />
+        <option value="$PROJECT_DIR$/Server/ServerSocket.h" />
+        <option value="$PROJECT_DIR$/Server/ServerSocket.cpp" />
+        <option value="$PROJECT_DIR$/Client/ClientSocket.h" />
+        <option value="$PROJECT_DIR$/Client/ClientSocket.cpp" />
+        <option value="$PROJECT_DIR$/Server/Server.cpp" />
+        <option value="$PROJECT_DIR$/Client/Client.cpp" />
+        <option value="$PROJECT_DIR$/LinkedList/Node/Node.h" />
+        <option value="$PROJECT_DIR$/MPointer/RC.h" />
+        <option value="$PROJECT_DIR$/MPointerGC/MPointerGC.h" />
+        <option value="$PROJECT_DIR$/MPointerGC/MPointerGC.cpp" />
+        <option value="$PROJECT_DIR$/MPointer/MPointer.h" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="67" />
+    <option name="y" value="40" />
+    <option name="width" value="1340" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Proyecto1">
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Proyecto1" RUN_TARGET_NAME="Proyecto1" EXPLICIT_BUILD_TARGET_NAME="all" />
+    <configuration name="Proyecto1" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Proyecto1" TARGET_NAME="Proyecto1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Proyecto1" RUN_TARGET_NAME="Proyecto1" />
+    <list>
+      <item itemvalue="Application.Build All" />
+      <item itemvalue="Application.Proyecto1" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ebe118ee-d7f1-4bc1-8560-ebe1df260f0d" name="Default" comment="" />
+      <created>1537680240392</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1537680240392</updated>
+      <workItem from="1537680241444" duration="6329000" />
+      <workItem from="1537688653768" duration="2524000" />
+      <workItem from="1537727791197" duration="757000" />
+      <workItem from="1537752453530" duration="1072000" />
+      <workItem from="1537756799103" duration="1274000" />
+      <workItem from="1537767430340" duration="1001000" />
+      <workItem from="1537770504057" duration="1460000" />
+      <workItem from="1537774454621" duration="310000" />
+      <workItem from="1537774909474" duration="7746000" />
+      <workItem from="1537829662041" duration="4477000" />
+      <workItem from="1538008593469" duration="5374000" />
+      <workItem from="1538044977203" duration="2166000" />
+      <workItem from="1538071188420" duration="9000" />
+      <workItem from="1538072523040" duration="875000" />
+      <workItem from="1538093583038" duration="2842000" />
+      <workItem from="1538110546578" duration="39000" />
+      <workItem from="1538110854693" duration="280000" />
+      <workItem from="1538121985460" duration="2722000" />
+      <workItem from="1538125229837" duration="1197000" />
+      <workItem from="1538182808705" duration="4022000" />
+      <workItem from="1538363134290" duration="2517000" />
+      <workItem from="1538418228114" duration="603000" />
+      <workItem from="1538441311326" duration="1765000" />
+      <workItem from="1538444161909" duration="3270000" />
+      <workItem from="1538449528510" duration="1318000" />
+      <workItem from="1538451291420" duration="2343000" />
+      <workItem from="1538458979455" duration="2194000" />
+    </task>
+    <task id="LOCAL-00001" summary="Se arreglan los errores">
+      <created>1537680499130</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1537680499130</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Se arreglan el Singleton">
+      <created>1537682897642</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1537682897642</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Se arregla el Singleton">
+      <created>1537683163952</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1537683163952</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Se implementan las referencias">
+      <created>1537686004818</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1537686004818</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Se mejoran las referencias">
+      <created>1537689230821</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1537689230821</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Se mejoran las referencias">
+      <created>1537689705567</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1537689705567</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Se mejoran las referencias">
+      <created>1537690300811</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1537690300811</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Se mejoran las referencias">
+      <created>1537728530313</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1537728530313</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Se mejoran las listas">
+      <created>1537768420755</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1537768420755</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Se mejoran las listas">
+      <created>1537770619093</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1537770619093</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Se mejoran las listas">
+      <created>1538008641615</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1538008641615</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Una mejora a los métodos">
+      <created>1538061997264</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1538061997265</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Una mejora a los métodos">
+      <created>1538072831713</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1538072831713</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Se añade el cliente/servidor">
+      <created>1538111113054</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1538111113055</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Se debuggean errores">
+      <created>1538124302969</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1538124302969</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Se recuperan las listas">
+      <created>1538449673002</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1538449673002</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Merge branch 'master' of https://github.com/Datos2Sem22018/Proyecto1&#10;&#10;# Conflicts:&#10;#&#9;LinkedList/Node/Node.h&#10;#&#9;MPointerGC/MPointerGC.cpp&#10;#&#9;main.cpp">
+      <created>1538450095396</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1538450095396</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Merge branch 'master' of https://github.com/Datos2Sem22018/Proyecto1&#10;&#10;# Conflicts:&#10;#&#9;LinkedList/Node/Node.h&#10;#&#9;MPointerGC/MPointerGC.cpp&#10;#&#9;main.cpp">
+      <created>1538452218202</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1538452218202</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="60486000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Cargo" order="3" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32910052" />
+      <window_info anchor="bottom" id="CMake" order="7" weight="0.32910052" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="7" sideWeight="0.50026983" side_tool="true" visible="true" weight="0.32910052" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49973017" weight="0.32910052" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32910052" />
+      <window_info anchor="right" id="Mongo Explorer" order="3" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.24986508" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32910052" />
+    </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="CMake" order="7" weight="0.32910052" />
+      <window_info anchor="right" id="Cargo" order="3" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24986508" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32910052" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32910052" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" id="Mongo Explorer" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32910052" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.32910052" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Se arreglan los errores" />
+    <MESSAGE value="Se arreglan el Singleton" />
+    <MESSAGE value="Se arregla el Singleton" />
+    <MESSAGE value="Se implementan las referencias" />
+    <MESSAGE value="Se mejoran las referencias" />
+    <MESSAGE value="Se mejoran las listas" />
+    <MESSAGE value="Una mejora a los métodos" />
+    <MESSAGE value="Se añade el cliente/servidor" />
+    <MESSAGE value="Se debuggean errores" />
+    <MESSAGE value="Se recuperan las listas" />
+    <MESSAGE value="Merge branch 'master' of https://github.com/Datos2Sem22018/Proyecto1&#10;&#10;# Conflicts:&#10;#&#9;LinkedList/Node/Node.h&#10;#&#9;MPointerGC/MPointerGC.cpp&#10;#&#9;main.cpp" />
+    <MESSAGE value="Merge branch 'master' of https://github.com/Datos2Sem22018/Proyecto1&#10;&#10;# Conflicts:&#10;#&#9;main.cpp" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/Datos2Sem22018/Proyecto1&#10;&#10;# Conflicts:&#10;#&#9;main.cpp" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/MPointer/MPointer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+          <folding>
+            <element signature="e#54#73#0" expanded="true" />
+            <element signature="e#2046#2055#0" expanded="true" />
+            <element signature="e#2153#2162#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="150" selection-start-line="5" selection-start-column="150" selection-end-line="5" selection-end-column="150" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MPointer/RC.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MPointer/RC.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="2" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MPointerGC/MPointerGC.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LinkedList/LinkedList.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1452">
+          <caret line="66" column="15" selection-start-line="66" selection-start-column="15" selection-end-line="66" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MPointerGC/MPointerGC.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MPointer/MPointer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+          <folding>
+            <element signature="e#54#73#0" expanded="true" />
+            <element signature="e#2046#2055#0" expanded="true" />
+            <element signature="e#2153#2162#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="150" selection-start-line="5" selection-start-column="150" selection-end-line="5" selection-end-column="150" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MPointer/RC.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MPointer/RC.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="2" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MPointerGC/MPointerGC.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LinkedList/LinkedList.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1452">
+          <caret line="66" column="15" selection-start-line="66" selection-start-column="15" selection-end-line="66" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MPointerGC/RC.cpp" />
+    <entry file="file://$PROJECT_DIR$/MPointerGC/RC.h" />
+    <entry file="file://$PROJECT_DIR$/MPointer/MPointer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+          <folding>
+            <element signature="e#54#73#0" expanded="true" />
+            <element signature="e#2046#2055#0" expanded="true" />
+            <element signature="e#2153#2162#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="150" selection-start-line="5" selection-start-column="150" selection-end-line="5" selection-end-column="150" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MPointerGC/MPointerGC.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RC.h" />
+    <entry file="file://$PROJECT_DIR$/MPointerGC/MPointerGC.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MPointerGC/MPointerGC.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MPointer/MPointer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+          <folding>
+            <element signature="e#54#73#0" expanded="true" />
+            <element signature="e#2046#2055#0" expanded="true" />
+            <element signature="e#2153#2162#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="150" selection-start-line="5" selection-start-column="150" selection-end-line="5" selection-end-column="150" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RC.cpp" />
+    <entry file="file://$PROJECT_DIR$/LinkedList/LinkedList.cpp" />
+    <entry file="file://$PROJECT_DIR$/LinkedList/Node/Node.cpp" />
+    <entry file="file://$PROJECT_DIR$/RC.cpp" />
+    <entry file="file://$PROJECT_DIR$/RC.h" />
+    <entry file="file://$PROJECT_DIR$/ReferenceCounting/RC.h" />
+    <entry file="file://$PROJECT_DIR$/ReferenceCounting/RC.cpp" />
+    <entry file="file://$PROJECT_DIR$/MPointerGC/RC.h" />
+    <entry file="file://$PROJECT_DIR$/MPointerGC/RC.cpp" />
+    <entry file="file://$PROJECT_DIR$/MPointer/MPointer.cpp" />
+    <entry file="file://$PROJECT_DIR$/Client/ClientSocket.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/Server.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/Client.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="10" lean-forward="true" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/ServerSocket.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LinkedList/LinkedList.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/ServerSocket.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LinkedList/Node/Node.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MPointer/RC.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/ClientSocket.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="29" lean-forward="true" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MPointer/RC.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MPointerGC/MPointerGC.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MPointerGC/MPointerGC.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#39#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MPointer/MPointer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="106" column="14" selection-start-line="106" selection-start-column="14" selection-end-line="106" selection-end-column="14" />
+          <folding>
+            <element signature="e#54#73#0" expanded="true" />
+            <element signature="e#2046#2055#0" expanded="true" />
+            <element signature="e#2153#2162#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="24" column="3" lean-forward="true" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
+          <folding>
+            <element signature="e#22#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
