@@ -8,10 +8,13 @@
 template <class T>
 class MPointer {
 private:
+    // atributos de la clase
     T* data;
     RC* reference;
     int ID;
+    //""""""""""""""""""""""""
 public:
+    /////////////////////////////////
     //Constructor de la clase
     MPointer();
     //Destructor de la clase
@@ -22,10 +25,11 @@ public:
     MPointer<T>& operator = (MPointer* myPtr);
     void operator * (T value);
     T operator &();
+    // metodo para asignar el ID
     void setID();
     int getID();
 };
-//####################################################################//
+////////////////////////////////////////////////////////////////////
 /**
  * Contructor de la clase
  * @tparam T
@@ -38,16 +42,11 @@ MPointer<T>::MPointer() {
     //Asigna el ID correspondiente
     setID();
 
-
-
     reference = new RC();
     reference->addRef();
-
     MPointerGC::getInstance()->listMemory.add(long(this));
-
-
-
 }
+////////////////////////////////////////////////////////////////////
 /**
  * Destructor de la clase
  * @tparam T
@@ -60,6 +59,7 @@ MPointer<T>::~MPointer() {
         delete reference;
     }
 }
+////////////////////////////////////////////////////////////////////
 /**
  * crea una asignacion de memoria para un dato insertado en MPointer
  * @tparam T
@@ -70,6 +70,7 @@ MPointer<T> MPointer<T>::New() {
     MPointer<T>* myPtr = new MPointer();
     return *myPtr;
 }
+////////////////////////////////////////////////////////////////////
 /**
  * Sobrecarga del operador "="
  * @tparam T
@@ -86,6 +87,7 @@ MPointer<T>& MPointer<T>::operator=(MPointer *myPtr) {
         std::cout << "Doesn't work" << std::endl;
     }
 }
+////////////////////////////////////////////////////////////////////
 
 /**
  * Sobrecarga del operador "&"
@@ -98,6 +100,7 @@ T MPointer<T>::operator&() {
     return *data;
 }
 
+////////////////////////////////////////////////////////////////////
 /**
  * Sobrecarga del operador "*"
  * asigna el valor a MPointer
@@ -108,15 +111,18 @@ template <class T>
 void MPointer<T>::operator*(T value){
     *data = value;
 }
+////////////////////////////////////////////////////////////////////
 
 template <class T>
 void MPointer<T>::setID() {
     ID = MPointerGC::getInstance()->getID();
 }
 
+////////////////////////////////////////////////////////////////////
 template <class T>
 int MPointer<T>::getID() {
     return ID;
 }
+////////////////////////////////////////////////////////////////////
 
 #endif
