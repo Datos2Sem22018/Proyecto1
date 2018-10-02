@@ -33,7 +33,7 @@ public:
 template<class T>
 MPointer<T>::MPointer() {
     //guardar el espacio de memoria
-    data = malloc(sizeof(T));
+    data = static_cast< T* >( malloc(sizeof(T)) );
 
     //Asigna el ID correspondiente
     setID();
