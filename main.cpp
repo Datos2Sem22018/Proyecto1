@@ -7,11 +7,20 @@
 using namespace std;
 
 int main() {
-    MPointerGC* s = MPointerGC::getInstance();
-    MPointer<int>* myPtr = new MPointer<int>();
-    MPointer<int>* myPtr2 = new MPointer<int>();
-    MPointer<int>* myPtr3 = new MPointer<int>();
-    s->listMemory.printList();
-    s->listReferences.printList();
+    /**
+ * clase principal de la ejecucion de Mpointer.
+ * @return
+ */
+    MPointerGC* mPointerGC = MPointerGC::getInstance();
+    cout << &mPointerGC << endl;
+    thread t1(mPointerGC->executeMPGC);
+    MPointer<int>* mPtr = new MPointer<int>;
+    cout << &mPtr << endl;
+    for(int i=0; i<100 ; i++){
+        cout<<"Desde el main"<<endl;
+        usleep(1000000);
+    }
+    mPointerGC->listMemory.printList();
+    t1.join();
     return 0;
 }
