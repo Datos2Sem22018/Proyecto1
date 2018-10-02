@@ -30,7 +30,7 @@ int main() {
     thread t1(mPointerGC->executeMPGC);
 
     //Pruebas a  la creacion de una instancia de MPointer
-    MPointer<int>* mPtr = new MPointer<int>;
+    MPointer<int>* mPtr = new MPointer<int>();
     cout << &mPtr << endl;
 
 
