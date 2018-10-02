@@ -6,21 +6,28 @@
 #include "LinkedList/LinkedList.h"
 using namespace std;
 
+static void executeMPGC() {
+    MPointerGC::getInstance();
+    for(int i=0; i<5; i++){
+        std::cout<<"Execcuting MPointerGC"<<std::endl;
+        usleep(5000000);
+    }
+}
+
 int main() {
     /**
  * clase principal de la ejecucion de Mpointer.
  * @return
  */
-    MPointerGC* mPointerGC = MPointerGC::getInstance();
-    cout << &mPointerGC << endl;
-    thread t1(mPointerGC->executeMPGC);
-    MPointer<int>* mPtr = new MPointer<int>;
-    cout << &mPtr << endl;
+    thread t1(executeMPGC);
+    MPointer<int>* myPtr = new MPointer<int>();
+    cout << "Working" << endl;
+    cout << &myPtr << endl;
+    MPointerGC::getInstance()->listMemory.printList();
     for(int i=0; i<100 ; i++){
         cout<<"Desde el main"<<endl;
         usleep(1000000);
     }
-    mPointerGC->listMemory.printList();
     t1.join();
     return 0;
 }

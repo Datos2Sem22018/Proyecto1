@@ -6,6 +6,10 @@
 
 
 ///parte del Singleton///////////////////////
+MPointerGC::MPointerGC() {
+
+}
+
 MPointerGC* MPointerGC::instance = 0;
 
 MPointerGC* MPointerGC::getInstance() {
@@ -23,13 +27,3 @@ MPointerGC* MPointerGC::getInstance() {
 void MPointerGC::setDirMemo(MPointer<T> mPtr) {
     listMemory.add(&mPtr);
 }*/
-
-/////////////////////////////////////////////
-void MPointerGC::executeMPGC() {
-
-    MPointerGC* mPointerGC = MPointerGC::getInstance();
-    for(int i=0; i<5; i++){
-        std::cout<<"Execcuting MPointerGC"<<std::endl;
-        usleep(5000000);
-    }
-}
