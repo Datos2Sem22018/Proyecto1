@@ -15,11 +15,11 @@ public:
     MPointer();
     //Destructor de la clase
     ~MPointer();
-    //Asigacion de Memoria por atributo de MPointer
+    //Asignacion de Memoria por atributo de MPointer
     static MPointer New();
     //Sobrecarga de metodos de MPointer
     MPointer<T>& operator = (MPointer* myPtr);
-    void operator * (T* value);
+    void operator * (T value);
     T operator &();
 };
 /**
@@ -46,7 +46,7 @@ MPointer<T>::~MPointer() {
     }
 }
 /**
- * crea una asignacion de memoria para un dato incertado en MPointer
+ * crea una asignacion de memoria para un dato insertado en MPointer
  * @tparam T
  * @return
  */
@@ -77,7 +77,7 @@ MPointer<T>& MPointer<T>::operator=(MPointer *myPtr) {
  * Sobrecarga del operador "&"
  * retorna el valor de Mpointer
  * @tparam T
- * @return : valor del Mpointer
+ * @return :valor del Mpointer
  */
 template <class T>
 T MPointer<T>::operator&() {
@@ -91,8 +91,8 @@ T MPointer<T>::operator&() {
  * @param value : valor a agregar
  */
 template <class T>
-void MPointer<T>::operator*(T* value){
-    data = value;
+void MPointer<T>::operator*(T value){
+    *data = value;
 }
 
 #endif
