@@ -93,6 +93,9 @@
 		<Unit filename="/home/zuckerberg/CLionProjects/Proyecto1/Client/ClientSocket.h">
 			<Option target="Proyecto1"/>
 		</Unit>
+		<Unit filename="/home/zuckerberg/CLionProjects/Proyecto1/HashTable.h">
+			<Option target="Proyecto1"/>
+		</Unit>
 		<Unit filename="/home/zuckerberg/CLionProjects/Proyecto1/LinkedList/LinkedList.h">
 			<Option target="Proyecto1"/>
 		</Unit>
