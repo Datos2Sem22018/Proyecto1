@@ -23,7 +23,10 @@ MPointerGC* MPointerGC::getInstance() {
 }
 
 int MPointerGC::getID() {
-    int ID = rand();
+    int ID = rand()%1000;
+    if(listID.searchB(ID)){
+        ID=getID();
+    }
     return ID;
 }
 
