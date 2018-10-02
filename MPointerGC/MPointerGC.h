@@ -10,13 +10,14 @@ private:
     static MPointerGC* instance;
     /* Private constructor to prevent instancing. */
     MPointerGC();
-    /* Static access method. */
+
 public:
     static MPointerGC* getInstance();
     static void executeMPGC();
     int getID();
     LinkedList<long> listMemory;
     LinkedList<int> listReferences;
+    LinkedList<int> listID;
 };
 
 
