@@ -7,9 +7,8 @@
 
 
 class RC {
-private:
-    int count;
 public:
+    int count;
     RC() = default;
     ~RC() = default;
     void addRef();

@@ -27,6 +27,8 @@ template<class T>
 MPointer<T>::MPointer() {
     reference = new RC();
     reference->addRef();
+    MPointerGC::getInstance()->listMemory.add((long)(this));
+    MPointerGC::getInstance()->listReferences.add(reference->count);
 }
 
 template <class T>
@@ -40,7 +42,7 @@ MPointer<T>::~MPointer() {
 
 template <class T>
 MPointer<T> MPointer<T>::New() {
-    auto* myPtr = new MPointer();
+    MPointer<T>* myPtr = new MPointer();
     new T;
     return *myPtr;
 }

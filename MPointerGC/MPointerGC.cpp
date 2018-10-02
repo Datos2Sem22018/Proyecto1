@@ -8,6 +8,10 @@
 ///parte del Singleton///////////////////////
 MPointerGC* MPointerGC::instance = 0;
 
+MPointerGC::MPointerGC() {
+
+}
+
 MPointerGC* MPointerGC::getInstance() {
     if (instance == 0){
         instance = new MPointerGC();
