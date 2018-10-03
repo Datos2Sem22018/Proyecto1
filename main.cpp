@@ -35,7 +35,8 @@ int main() {
 
     MPointer<int>* mPtr2 = new MPointer<int>();
     cout<< &mPtr2<<endl;
-    //*mPtr2=5;
+    mPtr2->operator*(5);
+    cout << mPtr2->operator&() << endl;
 
 
     for(int i=0; i<15 ; i++){

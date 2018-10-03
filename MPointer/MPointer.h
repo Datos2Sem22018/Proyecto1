@@ -23,7 +23,7 @@ public:
     static MPointer New();
     //Sobrecarga de metodos de MPointer
     MPointer<T>& operator = (MPointer* myPtr);
-    void operator * (T value);
+    void operator * (const T& value);
     T operator &();
     // metodo para asignar el ID
     void setID();
@@ -44,7 +44,7 @@ MPointer<T>::MPointer() {
 
     reference = new RC();
     reference->addRef();
-    MPointerGC::getInstance()->listMemory.add(long(this));
+    MPointerGC::getInstance()->listMemory.add((long)this);
 }
 ////////////////////////////////////////////////////////////////////
 /**
@@ -57,6 +57,9 @@ MPointer<T>::~MPointer() {
     {
         delete data;
         delete reference;
+        MPointerGC::getInstance()->listMemory.remove((long)this);
+    } else {
+        reference->release();
     }
 }
 ////////////////////////////////////////////////////////////////////
@@ -108,7 +111,7 @@ T MPointer<T>::operator&() {
  * @param value : valor a agregar
  */
 template <class T>
-void MPointer<T>::operator*(T value){
+void MPointer<T>::operator*(const T& value){
     *data = value;
 }
 ////////////////////////////////////////////////////////////////////

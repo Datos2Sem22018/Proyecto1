@@ -17,7 +17,7 @@ public:
     bool isEmpty();
     void addInPos(T var, int pos);
     void add(T var);
-    void remove(int pos);
+    void remove(T value);
     Node<T>* getNode(int pos);
     Node<T>* getLastNode();
     Node<T>* search(T var);
@@ -137,28 +137,16 @@ void LinkedList<T>::add(T var) {
  * @param pos : indice a eliminar
  */
 template <class T>
-void LinkedList<T>::remove(int pos){
-    int pos_aux = pos;
-    Node<T>* current = head;
-    if (pos_aux == 0) {
-        head = current->next;
-        size -= 1;
-    } else if (pos_aux == size - 1) {
-        while (current->next->next != NULL) {
-            current = current->next;
-        }
-        current->next = NULL;
-        size -= 1;
-    } else if (pos_aux >= size) {
-        std::cout<<"No se encuentra el elemento"<< std::endl;
+void LinkedList<T>::remove(T value) {
+    Node<T>* n = search(value);
+    Node<T>* ptr = head;
+    if (ptr == n) {
+        head = n->next;
     } else {
-        int b = 0;
-        while (pos_aux - 1 != b) {
-            current = current->next;
-            b++;
+        while (ptr->next != NULL) {
+            ptr = ptr->next;
         }
-        current->next = current->next->next;
-        size -= 1;
+        ptr->next = n->next;
     }
 }
 
@@ -203,9 +191,6 @@ bool LinkedList<T>::searchB(T var) {
         }
         return true;
     }
-
-
-
 }
 
 
