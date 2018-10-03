@@ -9,7 +9,7 @@ template <class T>
 class MPointer {
 private:
     // atributos de la clase
-    T* data;
+    T* data ;
     RC* reference;
     int ID;
     //""""""""""""""""""""""""
@@ -24,10 +24,16 @@ public:
     //Sobrecarga de metodos de MPointer
     MPointer<T>& operator = (MPointer* myPtr);
     void operator * (T value);
-    T operator &();
+    T& operator &();
     // metodo para asignar el ID
     void setID();
     int getID();
+
+    MPointer(int i);
+
+    T *getData() const;
+
+    void setData(T *data);
 };
 ////////////////////////////////////////////////////////////////////
 /**
@@ -96,7 +102,7 @@ MPointer<T>& MPointer<T>::operator=(MPointer *myPtr) {
  * @return :valor del Mpointer
  */
 template <class T>
-T MPointer<T>::operator&() {
+T& MPointer<T>::operator&() {
     return *data;
 }
 
@@ -108,7 +114,7 @@ T MPointer<T>::operator&() {
  * @param value : valor a agregar
  */
 template <class T>
-void MPointer<T>::operator*(T value){
+void MPointer<T>::operator * (T value){
     *data = value;
 }
 ////////////////////////////////////////////////////////////////////
@@ -123,6 +129,17 @@ template <class T>
 int MPointer<T>::getID() {
     return ID;
 }
+
+
 ////////////////////////////////////////////////////////////////////
+template<class T>
+T *MPointer<T>::getData() const {
+    return data;
+}
+
+template<class T>
+void MPointer<T>::setData(T *data) {
+    MPointer::data = data;
+}
 
 #endif
