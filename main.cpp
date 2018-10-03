@@ -14,6 +14,7 @@ using namespace std;
  * clase principal de la ejecucion de Mpointer.
  * @return
  */
+
 int main() {
 
     // Pruebas a Linked List
@@ -33,8 +34,10 @@ int main() {
     MPointer<int>* mPtr = new MPointer<int>();
     cout << &mPtr << endl;
 
+
     MPointer<int>* mPtr2 = new MPointer<int>();
     cout<< &mPtr2<<endl;
+
     mPtr2->operator*(5);
     cout<<mPtr2->operator&()<<endl;
 

@@ -28,6 +28,8 @@ public:
     // metodo para asignar el ID
     void setID();
     int getID();
+
+    void setData(T *data);
 };
 ////////////////////////////////////////////////////////////////////
 /**
@@ -114,6 +116,8 @@ template <class T>
 void MPointer<T>::operator*(const T& value){
     *data = value;
 }
+
+
 ////////////////////////////////////////////////////////////////////
 
 template <class T>
@@ -127,5 +131,9 @@ int MPointer<T>::getID() {
     return ID;
 }
 ////////////////////////////////////////////////////////////////////
+template<class T>
+void MPointer<T>::setData(T *data) {
+    MPointer::data = data;
+}
 
 #endif
