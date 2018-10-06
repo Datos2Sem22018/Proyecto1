@@ -14,6 +14,9 @@
     <list default="true" id="ebe118ee-d7f1-4bc1-8560-ebe1df260f0d" name="Default" comment="miercoles 03.22">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MPointer/MPointer.h" beforeDir="false" afterPath="$PROJECT_DIR$/MPointer/MPointer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Proyecto1" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Proyecto1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -30,15 +33,15 @@
         <counts>
           <entry key="project.closed" value="1" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.34" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="792" />
-          <entry key="h" value="850" />
+          <entry key="cpp" value="805" />
+          <entry key="h" value="880" />
           <entry key="txt" value="242" />
         </counts>
       </usages-collector>
@@ -46,7 +49,7 @@
         <counts>
           <entry key="CMakeLists.txt" value="19" />
           <entry key="Doxygen file" value="1" />
-          <entry key="ObjectiveC" value="1641" />
+          <entry key="ObjectiveC" value="1684" />
           <entry key="PLAIN_TEXT" value="223" />
         </counts>
       </usages-collector>
@@ -72,8 +75,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+            <state relative-caret-position="291">
+              <caret line="42" column="16" lean-forward="true" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
               <folding>
                 <element signature="e#22#41#0" expanded="true" />
               </folding>
@@ -93,7 +96,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MPointerGC/MPointerGC.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
+            <state relative-caret-position="255">
               <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
               <folding>
                 <element signature="e#39#58#0" expanded="true" />
@@ -126,8 +129,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MPointer/MPointer.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="131" column="1" selection-start-line="131" selection-start-column="1" selection-end-line="131" selection-end-column="1" />
+            <state relative-caret-position="167">
+              <caret line="88" column="21" selection-start-line="88" selection-start-column="21" selection-end-line="88" selection-end-column="21" />
               <folding>
                 <element signature="e#54#73#0" expanded="true" />
                 <element signature="e#3244#3253#0" expanded="true" />
@@ -190,7 +193,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -217,6 +219,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -293,6 +296,7 @@
       <workItem from="1538468627416" duration="1435000" />
       <workItem from="1538471343556" duration="7233000" />
       <workItem from="1538541482050" duration="8930000" />
+      <workItem from="1538810532681" duration="970000" />
     </task>
     <task id="LOCAL-00001" summary="Se arreglan los errores">
       <created>1537680499130</created>
@@ -515,13 +519,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78688000" />
+    <option name="totallyTimeSpent" value="79658000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="49" y="25" width="1317" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25727773" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26121163" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -654,9 +658,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HashTable.h">
+    <entry file="file://$PROJECT_DIR$/HashTable.h" />
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-560" />
+        <state relative-caret-position="285">
+          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MPointerGC/MPointerGC.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding>
+            <element signature="e#39#58#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LinkedList/LinkedList.h">
@@ -676,27 +693,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MPointerGC/MPointerGC.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-          <folding>
-            <element signature="e#39#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MPointer/MPointer.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="131" column="1" selection-start-line="131" selection-start-column="1" selection-end-line="131" selection-end-column="1" />
+        <state relative-caret-position="167">
+          <caret line="88" column="21" selection-start-line="88" selection-start-column="21" selection-end-line="88" selection-end-column="21" />
           <folding>
             <element signature="e#54#73#0" expanded="true" />
             <element signature="e#3244#3253#0" expanded="true" />
@@ -706,8 +706,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+        <state relative-caret-position="291">
+          <caret line="42" column="16" lean-forward="true" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
           <folding>
             <element signature="e#22#41#0" expanded="true" />
           </folding>
