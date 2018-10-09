@@ -5,6 +5,8 @@
 #include "RC.h"
 #include "MPointerGC.h"
 
+
+
 template <class T>
 class MPointer {
 private:
@@ -24,6 +26,7 @@ public:
     void operator = (const MPointer &myPtr);
     void operator = (const int &value);
 
+
     T& operator * ();
     T& operator &();
 
@@ -33,6 +36,7 @@ public:
 
     void setData(T *data);
 };
+
 ////////////////////////////////////////////////////////////////////
 /**
  * Contructor de la clase
@@ -149,3 +153,5 @@ void MPointer<T>::setData(T *data) {
 }
 
 #endif
+
+
