@@ -6,8 +6,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Proyecto1.dir/ServerSocket.cpp.o"
   "CMakeFiles/Proyecto1.dir/Server.cpp.o"
   "CMakeFiles/Proyecto1.dir/Client.cpp.o"
-  "Proyecto1.pdb"
-  "Proyecto1"
+  "libProyecto1.pdb"
+  "libProyecto1.a"
 )
 
 # Per-language clean rules from dependency scanning.
