@@ -4,13 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/zuckerberg/CLionProjects/Proyecto1/Client.cpp" "/home/zuckerberg/CLionProjects/Proyecto1/cmake-build-debug/CMakeFiles/Proyecto1.dir/Client.cpp.o"
-  "/home/zuckerberg/CLionProjects/Proyecto1/ClientSocket.cpp" "/home/zuckerberg/CLionProjects/Proyecto1/cmake-build-debug/CMakeFiles/Proyecto1.dir/ClientSocket.cpp.o"
-  "/home/zuckerberg/CLionProjects/Proyecto1/MPointerGC.cpp" "/home/zuckerberg/CLionProjects/Proyecto1/cmake-build-debug/CMakeFiles/Proyecto1.dir/MPointerGC.cpp.o"
-  "/home/zuckerberg/CLionProjects/Proyecto1/RC.cpp" "/home/zuckerberg/CLionProjects/Proyecto1/cmake-build-debug/CMakeFiles/Proyecto1.dir/RC.cpp.o"
-  "/home/zuckerberg/CLionProjects/Proyecto1/Server.cpp" "/home/zuckerberg/CLionProjects/Proyecto1/cmake-build-debug/CMakeFiles/Proyecto1.dir/Server.cpp.o"
-  "/home/zuckerberg/CLionProjects/Proyecto1/ServerSocket.cpp" "/home/zuckerberg/CLionProjects/Proyecto1/cmake-build-debug/CMakeFiles/Proyecto1.dir/ServerSocket.cpp.o"
-  "/home/zuckerberg/CLionProjects/Proyecto1/main.cpp" "/home/zuckerberg/CLionProjects/Proyecto1/cmake-build-debug/CMakeFiles/Proyecto1.dir/main.cpp.o"
+  "/home/mariano/CLionProjects/Proyecto1/Client.cpp" "/home/mariano/CLionProjects/Proyecto1/cmake-build-debug/CMakeFiles/Proyecto1.dir/Client.cpp.o"
+  "/home/mariano/CLionProjects/Proyecto1/ClientSocket.cpp" "/home/mariano/CLionProjects/Proyecto1/cmake-build-debug/CMakeFiles/Proyecto1.dir/ClientSocket.cpp.o"
+  "/home/mariano/CLionProjects/Proyecto1/MPointerGC.cpp" "/home/mariano/CLionProjects/Proyecto1/cmake-build-debug/CMakeFiles/Proyecto1.dir/MPointerGC.cpp.o"
+  "/home/mariano/CLionProjects/Proyecto1/RC.cpp" "/home/mariano/CLionProjects/Proyecto1/cmake-build-debug/CMakeFiles/Proyecto1.dir/RC.cpp.o"
+  "/home/mariano/CLionProjects/Proyecto1/Server.cpp" "/home/mariano/CLionProjects/Proyecto1/cmake-build-debug/CMakeFiles/Proyecto1.dir/Server.cpp.o"
+  "/home/mariano/CLionProjects/Proyecto1/ServerSocket.cpp" "/home/mariano/CLionProjects/Proyecto1/cmake-build-debug/CMakeFiles/Proyecto1.dir/ServerSocket.cpp.o"
+  "/home/mariano/CLionProjects/Proyecto1/main.cpp" "/home/mariano/CLionProjects/Proyecto1/cmake-build-debug/CMakeFiles/Proyecto1.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

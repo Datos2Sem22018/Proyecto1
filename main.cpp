@@ -31,10 +31,21 @@ int main() {
     //Pruebas a  la creacion de una instancia de MPointer
     MPointer<int>* mPtr = new MPointer<int>();
     cout << &mPtr << endl;
+    *mPtr = 3;
+    mPtr->operator&();
+    //int valor = &mPtr;
+
+    cout<<&mPtr<<endl;
+
 
     MPointer<int>* mPtr2 = new MPointer<int>();
+    //mPtr2 = 8;
+
+    //int valor = &mPtr;
+
     cout<< mPtr2<<endl;
     mPtr = mPtr2;
+
     cout << mPtr << endl;
 
 

@@ -1,4 +1,4 @@
-#ifndef MPOINTER_LIBRARY_H
+        #ifndef MPOINTER_LIBRARY_H
 #define MPOINTER_LIBRARY_H
 #include <iostream>
 #include <typeinfo>
@@ -15,16 +15,18 @@ private:
     //""""""""""""""""""""""""
 public:
     /////////////////////////////////
-    //Constructor de la clase
-    MPointer();
-    //Destructor de la clase
-    ~MPointer();
-    //Asignacion de Memoria por atributo de MPointer
-    static MPointer New();
+
+    MPointer();//Constructor de la clase
+    ~MPointer();//Destructor de la clase
+    static MPointer New();//Asignacion de Memoria por atributo de MPointer
+
     //Sobrecarga de metodos de MPointer
-    MPointer<T>& operator = (MPointer* myPtr);
-    void operator * (const T& value);
-    T operator &();
+    void operator = (const MPointer &myPtr);
+    void operator = (const int &value);
+
+    T& operator * ();
+    T& operator &();
+
     // metodo para asignar el ID
     void setID();
     int getID();
@@ -38,12 +40,8 @@ public:
  */
 template<class T>
 MPointer<T>::MPointer() {
-    //guardar el espacio de memoria
-    data = static_cast< T* >( malloc(sizeof(T)) );
-
-    //Asigna el ID correspondiente
-    setID();
-
+    data = static_cast< T* >( malloc(sizeof(T)) );//guardar el espacio de memoria
+    setID();//Asigna el ID correspondiente
     reference = new RC();
     reference->addRef();
     MPointerGC::getInstance()->listMemory.add((long)this);
@@ -83,7 +81,7 @@ MPointer<T> MPointer<T>::New() {
  * @return : Valido o Invalido
  */
 template <class T>
-MPointer<T>& MPointer<T>::operator=(MPointer *myPtr) {
+void MPointer<T>::operator=(const MPointer &myPtr) {
     if (typeid(myPtr).name() == typeid(this).name()) {
         this->data=myPtr->data;
         &this=&myPtr;
@@ -91,7 +89,21 @@ MPointer<T>& MPointer<T>::operator=(MPointer *myPtr) {
         std::cout << "Doesn't work" << std::endl;
     }
 }
-////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////
+template <class T>
+void MPointer<T>::operator=(const int &value){
+    std::string typeM = typeid(this->data).name();
+    std::string typoT= typeid(value).name();
+    if(typeM[1]== typoT[0]){
+        *data = value;
+    }else{
+        printf("Doesn't Work\n");
+    }
+}
+
+///////////////////////////////////////////////////////////////////
 
 /**
  * Sobrecarga del operador "&"
@@ -100,7 +112,8 @@ MPointer<T>& MPointer<T>::operator=(MPointer *myPtr) {
  * @return :valor del Mpointer
  */
 template <class T>
-T MPointer<T>::operator&() {
+T& MPointer<T>::operator&() {
+    std::cout<<*data<<std::endl;
     return *data;
 }
 
@@ -112,8 +125,8 @@ T MPointer<T>::operator&() {
  * @param value : valor a agregar
  */
 template <class T>
-void MPointer<T>::operator*(const T& value){
-    *data = value;
+T& MPointer<T>::operator*(){
+    return *data;
 }
 
 
