@@ -16,7 +16,6 @@ public:
     static void executeMPGC();
     int getID();
     LinkedList<long> listMemory;
-    LinkedList<int> listReferences;
     LinkedList<int> listID;
 };
 
