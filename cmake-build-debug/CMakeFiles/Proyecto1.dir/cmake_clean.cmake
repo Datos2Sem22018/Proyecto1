@@ -1,13 +1,13 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Proyecto1.dir/main.cpp.o"
-  "CMakeFiles/Proyecto1.dir/MPointerGC/MPointerGC.cpp.o"
-  "CMakeFiles/Proyecto1.dir/MPointer/RC.cpp.o"
-  "CMakeFiles/Proyecto1.dir/Client/ClientSocket.cpp.o"
-  "CMakeFiles/Proyecto1.dir/Server/ServerSocket.cpp.o"
-  "CMakeFiles/Proyecto1.dir/Server/Server.cpp.o"
-  "CMakeFiles/Proyecto1.dir/Client/Client.cpp.o"
-  "Proyecto1.pdb"
-  "Proyecto1"
+  "CMakeFiles/Proyecto1.dir/MPointerGC.cpp.o"
+  "CMakeFiles/Proyecto1.dir/RC.cpp.o"
+  "CMakeFiles/Proyecto1.dir/ClientSocket.cpp.o"
+  "CMakeFiles/Proyecto1.dir/ServerSocket.cpp.o"
+  "CMakeFiles/Proyecto1.dir/Server.cpp.o"
+  "CMakeFiles/Proyecto1.dir/Client.cpp.o"
+  "libProyecto1.pdb"
+  "libProyecto1.a"
 )
 
 # Per-language clean rules from dependency scanning.

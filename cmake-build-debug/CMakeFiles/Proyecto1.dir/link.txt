@@ -1,1 +1,2 @@
-/usr/bin/c++  -pthread -g   CMakeFiles/Proyecto1.dir/main.cpp.o CMakeFiles/Proyecto1.dir/MPointerGC/MPointerGC.cpp.o CMakeFiles/Proyecto1.dir/MPointer/RC.cpp.o CMakeFiles/Proyecto1.dir/Client/ClientSocket.cpp.o CMakeFiles/Proyecto1.dir/Server/ServerSocket.cpp.o CMakeFiles/Proyecto1.dir/Server/Server.cpp.o CMakeFiles/Proyecto1.dir/Client/Client.cpp.o  -o Proyecto1 
+/usr/bin/ar qc libProyecto1.a  CMakeFiles/Proyecto1.dir/main.cpp.o CMakeFiles/Proyecto1.dir/MPointerGC.cpp.o CMakeFiles/Proyecto1.dir/RC.cpp.o CMakeFiles/Proyecto1.dir/ClientSocket.cpp.o CMakeFiles/Proyecto1.dir/ServerSocket.cpp.o CMakeFiles/Proyecto1.dir/Server.cpp.o CMakeFiles/Proyecto1.dir/Client.cpp.o
+/usr/bin/ranlib libProyecto1.a

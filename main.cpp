@@ -5,9 +5,9 @@
 #include <iostream>
 #include <thread>
 #include <unistd.h>
-#include "MPointer/MPointer.h"
-#include "MPointerGC/MPointerGC.h"
-#include "LinkedList/LinkedList.h"
+#include "MPointer.h"
+#include "MPointerGC.h"
+#include "LinkedList.h"
 
 using namespace std;
 /**
