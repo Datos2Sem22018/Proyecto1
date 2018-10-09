@@ -17,5 +17,5 @@ add_executable(Proyecto1
         Server/ServerSocket.cpp
         Server/ServerSocket.h
         Server/Server.cpp
-        Client/Client.cpp HashTable.h)
+        Client/Client.cpp)
 SET(CMAKE_CXX_FLAGS -pthread)

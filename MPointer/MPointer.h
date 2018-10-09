@@ -28,6 +28,8 @@ public:
     // metodo para asignar el ID
     void setID();
     int getID();
+
+    void setData(T *data);
 };
 ////////////////////////////////////////////////////////////////////
 /**
@@ -83,9 +85,8 @@ MPointer<T> MPointer<T>::New() {
 template <class T>
 MPointer<T>& MPointer<T>::operator=(MPointer *myPtr) {
     if (typeid(myPtr).name() == typeid(this).name()) {
-        if (typeid(myPtr->data).name() == typeid(this->data).name()) {
-            std::cout << "Operator works" << std::endl;
-        }
+        this->data=myPtr->data;
+        &this=&myPtr;
     } else {
         std::cout << "Doesn't work" << std::endl;
     }
@@ -114,6 +115,8 @@ template <class T>
 void MPointer<T>::operator*(const T& value){
     *data = value;
 }
+
+
 ////////////////////////////////////////////////////////////////////
 
 template <class T>
@@ -127,5 +130,9 @@ int MPointer<T>::getID() {
     return ID;
 }
 ////////////////////////////////////////////////////////////////////
+template<class T>
+void MPointer<T>::setData(T *data) {
+    MPointer::data = data;
+}
 
 #endif

@@ -15,6 +15,13 @@ using namespace std;
  * @return
  */
 int main() {
+
+    // Pruebas a Linked List
+    LinkedList<int> l1 = LinkedList<int>();
+    l1.add(23);
+    l1.add(34);
+    l1.printList();
+
     //Pruebas a la creacion del CG
     MPointerGC* mPointerGC;
 
@@ -26,10 +33,9 @@ int main() {
     cout << &mPtr << endl;
 
     MPointer<int>* mPtr2 = new MPointer<int>();
-    cout<< &mPtr2<<endl;
-    mPtr2->operator*(5);
-    int x = mPtr2->operator&();
-    cout << x << endl;
+    cout<< mPtr2<<endl;
+    mPtr = mPtr2;
+    cout << mPtr << endl;
 
 
     for(int i=0; i<15 ; i++){
